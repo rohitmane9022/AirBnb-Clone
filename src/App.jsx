@@ -13,6 +13,7 @@ import PlaceForm from './Pages/PlaceForm'
 import SinglesPages from './Pages/SinglesPages'
 import BookingPages from './Pages/BookingPages'
 import BookingSinglePages from './Pages/BookingSinglePages'
+import Headers from './components/Headers'
 
 
 axios.defaults.baseURL="https://vast-plum-squid-yoke.cyclic.app"
@@ -22,11 +23,11 @@ function App() {
   console.log(import.meta.env.BASE_URL)
 
   return (
-    <div>
-    
-    <Routes>
-      <Route path='/' element={<Layout/>}>
-      <Route index element={<IndexPages/>}/>
+    <div className="py-4 px-8 flex flex-col min-h-screen max-w-[1450px] mx-auto">
+    <Headers/>
+    <Routes >
+      
+      <Route path='/' element={<IndexPages/>}/>
       <Route path='/register' element={<Register/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/account' element={<ProfilePage/>}/>
@@ -38,7 +39,7 @@ function App() {
       <Route path='/place/:id' element={<SinglesPages/>}/>
       
       <Route path='/account/booking/:id' element={<BookingSinglePages/>}/>
-     </Route>
+     
     </Routes>
     </div>
   )
