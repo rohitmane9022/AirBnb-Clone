@@ -20,7 +20,7 @@ function IndexPages() {
       <Link key={place._id} to={"/place/"+place._id}>
        <div className="bg-gray-500 rounded-2xl mb-2 flex">
        {place.photos?.[0] &&(
-          <img className="rounded-2xl aspect-square object-cover" src={`https://vast-plum-squid-yoke.cyclic.app/uploads/`+place.photos?.[0]} alt="" />
+          <img className="rounded-2xl aspect-square object-cover" src={`https://backend-of-airbnb.vercel.app/uploads/`+place.photos?.[0]} alt="" />
         )}
        </div>
         <h2 className="text-sm ">{place.title} </h2>

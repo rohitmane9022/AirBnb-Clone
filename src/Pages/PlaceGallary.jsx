@@ -15,7 +15,7 @@ Close photo</button>
           </div>
         {Place?.photos?.length>0 && Place.photos.map(photo=>(
           <div className='flex justify-center items-center '>
-            <img className='rounded-2xl overflow-hidden' src={"https://vast-plum-squid-yoke.cyclic.app/uploads/"+photo}/>
+            <img className='rounded-2xl overflow-hidden' src={"https://backend-of-airbnb.vercel.app/uploads/"+photo}/>
           </div>
         ))}
         </div>
@@ -28,7 +28,7 @@ Close photo</button>
      <div className="grid">
       {Place.photos?.[0] &&(
         <div >
-           <img onClick={()=> setShowAllPhoto(true)} className="cursor-pointer h-[100%]	" src={`https://vast-plum-squid-yoke.cyclic.app/uploads/`+Place.photos[0]} alt="" />
+           <img onClick={()=> setShowAllPhoto(true)} className="cursor-pointer h-[100%]	" src={`https://backend-of-airbnb.vercel.app/uploads/`+Place.photos[0]} alt="" />
         </div>
        
       )}
@@ -36,12 +36,12 @@ Close photo</button>
       
      <div className=" grid gap-1 hidden sm:grid">
      {Place.photos?.[1] &&(
-        <img onClick={()=> setShowAllPhoto(true)} className="cursor-pointer object-cover" src={`https://vast-plum-squid-yoke.cyclic.app/uploads/`+Place.photos[1]} alt="" />
+        <img onClick={()=> setShowAllPhoto(true)} className="cursor-pointer object-cover" src={`https://backend-of-airbnb.vercel.app/uploads/`+Place.photos[1]} alt="" />
       )}
       <div className="">
       {Place.photos?.[2] &&(
 
-<img onClick={()=> setShowAllPhoto(true)} className="cursor-pointer overflow-hidden" src={`https://vast-plum-squid-yoke.cyclic.app/uploads/`+Place.photos[2]} alt="" />
+<img onClick={()=> setShowAllPhoto(true)} className="cursor-pointer overflow-hidden" src={`https://backend-of-airbnb.vercel.app/uploads/`+Place.photos[2]} alt="" />
 )}
       </div>
       

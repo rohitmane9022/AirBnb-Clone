@@ -2,7 +2,7 @@ import './App.css'
 import { Route,Routes } from 'react-router'
 
 import IndexPages from './components/IndexPages'
-import Layout from './Pages/Layout'
+
 import Register from './Pages/Register'
 import Login from "./Pages/Login"
 import axios from 'axios'
@@ -16,7 +16,7 @@ import BookingSinglePages from './Pages/BookingSinglePages'
 import Headers from './components/Headers'
 
 
-axios.defaults.baseURL="https://vast-plum-squid-yoke.cyclic.app"
+axios.defaults.baseURL="https://backend-of-airbnb.vercel.app/"
 axios.defaults.withCredentials=true
 
 function App() {
